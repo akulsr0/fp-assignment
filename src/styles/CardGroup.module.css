@@ -100,9 +100,12 @@
   left: 0;
   height: 100%;
   width: 100%;
-  padding-top: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding-left: 33px;
   padding-right: 27px;
+  padding-bottom: 12px;
   border-radius: 12px;
 }
 
