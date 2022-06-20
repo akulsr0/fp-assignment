@@ -1,0 +1,140 @@
+.hc1Wrapper,
+.hc3Wrapper,
+.hc5Wrapper,
+.hc6Wrapper,
+.hc9Wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.hc3Wrapper {
+  margin: 15px 20px;
+}
+.hc5Wrapper {
+  margin: 15px 20px;
+}
+.hc9Wrapper {
+  margin-left: 21px;
+  margin-top: 15px;
+  overflow: scroll;
+}
+
+/* HC1, HC6 */
+.hc1Card,
+.hc6Card {
+  min-width: calc(100vw - 40px);
+  height: 60px;
+  margin: 15px 20px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hc6Card > img {
+  margin: 15px;
+  margin-left: 20px;
+}
+
+/* HC1 */
+.hc1Card:not(:first-child) {
+  margin-left: 0;
+}
+.hc1Card > img {
+  margin: 0 20px;
+}
+.hc1Card > div {
+  display: flex;
+  flex-direction: column;
+}
+.hc1Card > div > span:nth-of-type(1) {
+  font-weight: bold;
+}
+.hc1Card > div > span:nth-of-type(2) {
+  font-weight: lighter;
+}
+
+/* HC3 */
+.hc3Card {
+  width: calc(100vw - 40px);
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.hc3Card > .cardSidebar {
+  width: 126px;
+  height: 100%;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding-right: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hc3Card > .cardSidebar > div {
+  padding: 10px 10px;
+  border-radius: 12px;
+  background-color: #f7f6f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hc3Card > .cardSidebar > div:not(:first-child) {
+  margin-top: 47px;
+}
+.hc3Card > .cardSidebar > div > span {
+  line-height: 12px;
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+.hc3Card > .cardBody {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 125px;
+  padding-left: 33px;
+  padding-right: 27px;
+  border-radius: 12px;
+}
+
+.hc3Card > .cardBody > p {
+  margin-top: 28px;
+}
+.hc3Card > .cardBody > .actionbar {
+  margin-top: 29px;
+}
+.hc3Card > .cardBody > .actionbar > button {
+  width: 128px;
+  height: 42px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* HC5 */
+.hc5Card {
+  min-width: calc(100vw - 40px);
+  background-size: cover;
+}
+.hc5Card:not(:first-of-type) {
+  margin-left: 12px;
+}
+
+/* HC9 */
+.hc9Card {
+  height: 195px;
+  background-size: cover;
+}
+.hc9Card:not(:first-of-type) {
+  margin-left: 15px;
+}
